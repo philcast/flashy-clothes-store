@@ -1,0 +1,106 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 40.063em) {
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.black {
+    color: black;
+}
+
+.blue {
+    color: blue;
+}
+
+.pink {
+    color: deeppink;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: darkorange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.purple {
+    color: purple;
+}
+
+.categories {
+    width: auto;
+    margin-bottom: 20px;
+}
+
+nav.categories a {
+    display: inline-block;
+    border-bottom: 2px solid #dddddd;
+}
+
+nav.categories a.active {
+    background-color: #eeeeee;
+    border-bottom: 3px solid #555555;
+    border-radius: 3px;
+}
+
+.items a {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    border-bottom-right-radius: 15px;
+}
+
+.items a:active {
+    background-color: #eeeeee;
+}
+
+.items .item-price {
+    position: absolute;
+    font-size: 18px;
+    top: 0px;
+    right: 3px;
+}
+
+.shopping-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.shopping-cart a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.shopping-cart i {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.bullet-item i {
+    vertical-align: middle;
+}
