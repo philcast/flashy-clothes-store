@@ -1,4 +1,6 @@
-var App = Ember.Application.create();
+var App = Ember.Application.create({
+    LOG_TRANSITIONS: true
+});
 
 App.Router.map(function () {
     this.resource('catalog', function () {
@@ -12,5 +14,11 @@ App.Router.map(function () {
 App.IndexRoute = Ember.Route.extend({
     redirect: function () {
         this.transitionTo('catalog');
+    }
+});
+
+App.CatalogRoute = Ember.Route.extend({
+    model: function () {
+        return this.store.findAll('category');
     }
 });

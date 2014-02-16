@@ -27,6 +27,18 @@
         <h1><a href="#">Flashy clothes store</a></h1>
         <h4>An Ember.js demo application</h4>
     </header>
+    {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="catalog">
+    <nav class="categories">
+        {{#each category in controller}}
+            {{#link-to "category" category}}
+                <i {{bind-attr class="category.cssClass"}} style="font-size: 64px;"></i>
+            {{/link-to}}
+        {{/each}}
+    </nav>
+    {{outlet}}
 </script>
 
 <script src="js/lib/jquery-2.0.3.min.js"></script>
